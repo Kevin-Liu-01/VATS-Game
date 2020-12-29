@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import VATSON from "./VATS Sts/VATSON";
 import VATSOFF from "./VATS Sts/VATSOFF";
-import Practice from "./Practice";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -17,7 +16,6 @@ const Metagross = (props) => {
 
   return (
     <div>
-      <Practice />
       {isNotVats ? (
         <VATSOFF handleDirectoVATSClick={handleDirectoVATSClick} />
       ) : (
